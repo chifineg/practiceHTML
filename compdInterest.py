@@ -5,6 +5,8 @@
 """
 # get initial amount from user
 amount = eval(input("enter starting amount "))
+# store starting amount
+startingAmount = amount
 # get rate from user
 rate = eval(input("enter rate "))
 # convert rate to percentage
@@ -18,3 +20,6 @@ for i in range(1, 11):
         print("amount in {} years = {:.2f}".format(i, amount))
 #compound interest after 10 years
 print("Total money compounded in 10 years = ${:.2f}".format(amount))
+# return on investment
+profit = amount - startingAmount
+print("Profit after 10 years = ${:.2f}".format(profit))
